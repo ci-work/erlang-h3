@@ -27,7 +27,7 @@ message(STATUS "Using upstream h3 tag ${UPSTREAM_H3_GIT_TAG} based on local tag 
 
 ExternalProject_Add(external-h3
   PREFIX            ${CMAKE_CURRENT_BINARY_DIR}/external-h3
-  GIT_REPOSITORY    http://github.com/uber/h3.git
+  GIT_REPOSITORY    https://github.com/uber/h3.git
   GIT_TAG           ${UPSTREAM_H3_GIT_TAG}
   BUILD_IN_SOURCE   0
   CMAKE_ARGS        -DBUILD_BENCHMARKS=OFF
